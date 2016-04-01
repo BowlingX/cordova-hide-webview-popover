@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.bowlingx" version="0.1.0">
-    <name>hide-webview-popover</name>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="cordova-plugin-hide-webview-popover" version="0.1.0">
+    <name>HideWebViewPopover</name>
     <description>Enables or disables the popover view</description>
     <license>Apache 2.0</license>
     <keywords>popover, ios</keywords>
     <platform name="ios">
         <header-file src="src/ios/CDVHidePopoverView.h" />
         <source-file src="src/ios/CDVHidePopoverView.m" />
+        <config-file target="config.xml" parent="/*">
+            <feature name="HideWebViewPopover">
+                <param name="ios-package" value="CDVHidePopoverView" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
     </platform>
 </plugin>
