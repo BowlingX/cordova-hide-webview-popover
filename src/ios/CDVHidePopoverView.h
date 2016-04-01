@@ -5,7 +5,7 @@
 
 #import <Cordova/CDV.h>
 
-@interface CDVPreventCalloutView : CDVPlugin
+@interface CDVHidePopoverView : CDVPlugin
 
 @property (nonatomic) bool shouldHidePopover;
 
