@@ -5,8 +5,18 @@ import android.view.ActionMode;
 import android.view.Menu;
 import android.view.View;
 import android.view.MenuInflater;
+import android.content.Context;
+import android.util.AttributeSet;
 
 public class HidePopoverCapableWebView extends SystemWebView {
+
+    public HidePopoverCapableWebView(Context context) {
+        this(context, null);
+    }
+
+    public HidePopoverCapableWebView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
 
     public HidePopoverCapableWebView setPopoverEnabled(boolean popoverEnabled) {
         isPopoverEnabled = popoverEnabled;
@@ -26,7 +36,6 @@ public class HidePopoverCapableWebView extends SystemWebView {
 
     @Override
     public ActionMode startActionMode(ActionMode.Callback callback) {
-        return this.dummyActionMode();
         if(!this.isPopoverEnabled) {
             return this.dummyActionMode();
         } else {
