@@ -7,6 +7,16 @@
     <js-module src="www/PopoverView.js" name="PopoverView">
         <clobbers target="window.PopoverView" />
     </js-module>
+    <platform name="android">
+        <source-file src="src/android/HidePopoverView.java" target-dir="src/org/apache/cordova/statusbar" />
+        <config-file target="res/xml/config.xml" parent="/*">
+            <preference name="webView" value="com.bowlingx.cordova.webview.HidePopoverCapableWebView"/>
+            <feature name="HidePopoverView">
+                <param name="android-package" value="com.bowlingx.cordova.popover.HidePopoverView" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+    </platform>
     <platform name="ios">
         <header-file src="src/ios/CDVHidePopoverView.h" />
         <source-file src="src/ios/CDVHidePopoverView.m" />
