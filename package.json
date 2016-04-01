@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-hide-webview-popover",
+  "version": "0.1.0",
+  "description": "Cordova StatusBar Plugin",
+  "cordova": {
+    "id": "cordova-plugin-hide-webview-popove",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BowlingX/cordova-hide-webview-popover.git"
+  },
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=6.0.0"
+    }
+  ],
+  "author": "David Heidrich",
+  "license": "Apache 2.0"
+}
