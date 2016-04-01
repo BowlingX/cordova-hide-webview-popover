@@ -11,4 +11,4 @@ var PopoverView = {
     }
 };
 
-module.exports = HidePopoverView;
+module.exports = PopoverView;
