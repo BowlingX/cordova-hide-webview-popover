@@ -47,6 +47,7 @@ public class HidePopoverView extends CordovaPlugin {
             HidePopoverCapableWebView thisWebView = (HidePopoverCapableWebView) this.webView;
             boolean isEnabled = action.equals("enablePopoverView");
             thisWebView.setPopoverEnabled(isEnabled);
+            return true;
         }
         return false;
     }
