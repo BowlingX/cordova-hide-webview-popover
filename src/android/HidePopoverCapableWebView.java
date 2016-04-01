@@ -20,7 +20,7 @@ public class HidePopoverCapableWebView extends SystemWebView {
         if(!this.isPopoverEnabled) {
             return this.dummyActionMode();
         } else {
-            return super(callback, type);
+            return super.startActionMode(callback, type);
         }
     }
 
@@ -30,7 +30,7 @@ public class HidePopoverCapableWebView extends SystemWebView {
         if(!this.isPopoverEnabled) {
             return this.dummyActionMode();
         } else {
-            return super(callback);
+            return super.startActionMode(callback);
         }
     }
 
