@@ -12,10 +12,10 @@
                      target-dir="src/com/bowlingx/cordova/popover"/>
         <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebView.java"
                      target-dir="src/com/bowlingx/cordova/webview"/>
-        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebViewEngine.java"
+        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverWebViewEngine.java"
                      target-dir="src/com/bowlingx/cordova/webview"/>
         <config-file target="res/xml/config.xml" parent="/*">
-            <preference name="webView" value="com.bowlingx.cordova.webview.HidePopoverCapableWebViewEngine"/>
+            <preference name="webView" value="com.bowlingx.cordova.webview.HidePopoverWebViewEngine"/>
             <feature name="HidePopoverView">
                 <param name="android-package" value="com.bowlingx.cordova.popover.HidePopoverView"/>
                 <param name="onload" value="true"/>
