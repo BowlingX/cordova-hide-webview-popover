@@ -6,8 +6,7 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
 import org.json.JSONException;
-
-import com.bowlingx.cordova.webview.HidePopoverCapableWebView;
+import com.bowlingx.cordova.webview.HidePopoverWebViewEngine;
 
 public class HideWebViewPopover extends CordovaPlugin {
 
@@ -34,13 +33,9 @@ public class HideWebViewPopover extends CordovaPlugin {
     @Override
     public boolean execute(final String action, final CordovaArgs args,
                            final CallbackContext callbackContext) throws JSONException {
-
-        if (this.webView instanceof HidePopoverCapableWebView) {
-            HidePopoverCapableWebView thisWebView = (HidePopoverCapableWebView) this.webView;
-            boolean isEnabled = action.equals("enablePopoverView");
-            thisWebView.setPopoverEnabled(isEnabled);
-            return true;
-        }
-        return false;
+        HidePopoverWebViewEngine actualWebView = (HidePopoverWebViewEngine) this.webView.getEngine();
+        boolean isEnabled = action.equals("enablePopoverView");
+        actualWebView.setPopoverEnabled(isEnabled);
+        return true;
     }
 }
