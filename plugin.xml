@@ -5,27 +5,30 @@
     <license>Apache 2.0</license>
     <keywords>popover, ios</keywords>
     <js-module src="www/PopoverView.js" name="PopoverView">
-        <clobbers target="window.PopoverView" />
+        <clobbers target="window.PopoverView"/>
     </js-module>
     <platform name="android">
-        <source-file src="src/android/com/bowlingx/cordova/popover/HidePopoverView.java" target-dir="src/com/bowlingx/cordova/popover" />
-        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebView.java" target-dir="src/com/bowlingx/cordova/webview" />
-        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebViewEngine.java" target-dir="src/com/bowlingx/cordova/webview" />
+        <source-file src="src/android/com/bowlingx/cordova/popover/HidePopoverView.java"
+                     target-dir="src/com/bowlingx/cordova/popover"/>
+        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebView.java"
+                     target-dir="src/com/bowlingx/cordova/webview"/>
+        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebViewEngine.java"
+                     target-dir="src/com/bowlingx/cordova/webview"/>
         <config-file target="res/xml/config.xml" parent="/*">
             <preference name="webView" value="com.bowlingx.cordova.webview.HidePopoverCapableWebViewEngine"/>
             <feature name="HidePopoverView">
-                <param name="android-package" value="com.bowlingx.cordova.popover.HidePopoverView" />
-                <param name="onload" value="true" />
+                <param name="android-package" value="com.bowlingx.cordova.popover.HidePopoverView"/>
+                <param name="onload" value="true"/>
             </feature>
         </config-file>
     </platform>
     <platform name="ios">
-        <header-file src="src/ios/CDVHidePopoverView.h" />
-        <source-file src="src/ios/CDVHidePopoverView.m" />
+        <header-file src="src/ios/CDVHidePopoverView.h"/>
+        <source-file src="src/ios/CDVHidePopoverView.m"/>
         <config-file target="config.xml" parent="/*">
             <feature name="HideWebViewPopover">
-                <param name="ios-package" value="CDVHidePopoverView" />
-                <param name="onload" value="true" />
+                <param name="ios-package" value="CDVHidePopoverView"/>
+                <param name="onload" value="true"/>
             </feature>
         </config-file>
     </platform>
