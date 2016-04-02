@@ -8,9 +8,9 @@
         <clobbers target="window.PopoverView" />
     </js-module>
     <platform name="android">
-        <source-file src="src/android/HidePopoverView.java" target-dir="src/com/bowlingx/cordova/popover" />
-        <source-file src="src/android/HidePopoverCapableWebView.java" target-dir="src/com/bowlingx/cordova/webview" />
-        <source-file src="src/android/HidePopoverCapableWebViewEngine.java" target-dir="src/com/bowlingx/cordova/webview" />
+        <source-file src="src/android/com/bowlingx/cordova/popover/HidePopoverView.java" target-dir="src/com/bowlingx/cordova/popover" />
+        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebView.java" target-dir="src/com/bowlingx/cordova/webview" />
+        <source-file src="src/android/com/bowlingx/cordova/webview/HidePopoverCapableWebViewEngine.java" target-dir="src/com/bowlingx/cordova/webview" />
         <config-file target="res/xml/config.xml" parent="/*">
             <preference name="webView" value="com.bowlingx.cordova.webview.HidePopoverCapableWebViewEngine"/>
             <feature name="HidePopoverView">
