@@ -1,20 +1,12 @@
 package com.bowlingx.cordova.popover;
 
-import android.app.Activity;
-import android.graphics.Color;
-import android.os.Build;
-import android.util.Log;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaArgs;
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CordovaWebView;
-import org.apache.cordova.PluginResult;
 import org.json.JSONException;
+
 import com.bowlingx.cordova.webview.HidePopoverCapableWebView;
 
 public class HidePopoverView extends CordovaPlugin {
