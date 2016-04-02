@@ -9,7 +9,7 @@ import org.json.JSONException;
 
 import com.bowlingx.cordova.webview.HidePopoverCapableWebView;
 
-public class HidePopoverView extends CordovaPlugin {
+public class HideWebViewPopover extends CordovaPlugin {
 
     /**
      * Sets the context of the Command. This can then be used to do things like

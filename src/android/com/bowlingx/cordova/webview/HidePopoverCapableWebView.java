@@ -9,7 +9,7 @@ import android.view.MenuInflater;
 import android.content.Context;
 
 public class HidePopoverCapableWebView extends SystemWebView {
-    private boolean isPopoverEnabled = false;
+    private boolean isPopoverEnabled = true;
 
     public HidePopoverCapableWebView(Context context) {
         super(context);
